@@ -1,0 +1,81 @@
+<svg width="520" height="420" viewBox="0 0 520 420"
+     xmlns="http://www.w3.org/2000/svg">
+
+    <defs>
+        <linearGradient id="cloudGradient"
+                        x1="0"
+                        y1="0"
+                        x2="1"
+                        y2="1">
+
+            <stop offset="0%" stop-color="#6FA0FF"/>
+            <stop offset="100%" stop-color="#345FC5"/>
+
+        </linearGradient>
+    </defs>
+
+    <!-- Background Circle -->
+    <circle cx="260"
+            cy="210"
+            r="170"
+            fill="#E8F0FF"/>
+
+    <!-- Cloud -->
+    <path
+        d="M155 275
+           C120 275 95 250 95 218
+           C95 186 121 162 153 162
+           C166 117 207 87 254 87
+           C311 87 357 125 367 177
+           C405 180 435 208 435 242
+           C435 279 405 305 368 305
+           H155 Z"
+
+        fill="url(#cloudGradient)"
+    />
+
+    <!-- Server -->
+    <rect x="190"
+          y="195"
+          width="140"
+          height="80"
+          rx="12"
+          fill="white"
+          opacity="0.95"/>
+
+    <circle cx="212"
+            cy="218"
+            r="6"
+            fill="#4776E6"/>
+
+    <circle cx="232"
+            cy="218"
+            r="6"
+            fill="#4776E6"/>
+
+    <rect x="250"
+          y="213"
+          width="55"
+          height="10"
+          rx="5"
+          fill="#D5E1FA"/>
+
+    <circle cx="212"
+            cy="248"
+            r="6"
+            fill="#4776E6"/>
+
+    <circle cx="232"
+            cy="248"
+            r="6"
+            fill="#4776E6"/>
+
+    <rect x="250"
+          y="243"
+          width="55"
+          height="10"
+          rx="5"
+          fill="#D5E1FA"/>
+
+</svg>
+
