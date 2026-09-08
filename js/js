@@ -1,0 +1,107 @@
+// ================================
+// MOBILE MENU
+// ================================
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+
+    if (navLinks.classList.contains("active")) {
+        menuToggle.textContent = "✕";
+    } else {
+        menuToggle.textContent = "☰";
+    }
+});
+
+
+// Close mobile menu when clicking a link
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navLinks.classList.remove("active");
+
+        menuToggle.textContent = "☰";
+
+    });
+
+});
+
+
+// ================================
+// CURRENT YEAR
+// ================================
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+
+// ================================
+// BACK TO TOP BUTTON
+// ================================
+
+const topButton = document.getElementById("topButton");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 400) {
+        topButton.classList.add("show");
+    } else {
+        topButton.classList.remove("show");
+    }
+
+});
+
+topButton.addEventListener("click", () => {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
+
+
+// ================================
+// SIMPLE SCROLL REVEAL
+// ================================
+
+const revealElements = document.querySelectorAll(
+    ".card, .model-card, .provider, .info-card"
+);
+
+const revealObserver = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+
+                revealObserver.unobserve(entry.target);
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.15
+    }
+);
+
+
+revealElements.forEach(element => {
+
+    element.style.opacity = "0";
+    element.style.transform = "translateY(25px)";
+    element.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+
+    revealObserver.observe(element);
+
+});
+

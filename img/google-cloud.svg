@@ -1,0 +1,29 @@
+<svg width="220" height="80"
+     viewBox="0 0 220 80"
+     xmlns="http://www.w3.org/2000/svg">
+
+    <rect width="220"
+          height="80"
+          rx="12"
+          fill="#F7F9FC"/>
+
+    <path d="M65 50
+             L78 28
+             L92 28
+             L106 50
+             L92 50
+             L85 38
+             L78 50 Z"
+          fill="#4285F4"/>
+
+    <text x="118"
+          y="47"
+          font-family="Arial"
+          font-size="18"
+          font-weight="bold"
+          fill="#4285F4">
+        Google Cloud
+    </text>
+
+</svg>
+

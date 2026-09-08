@@ -1,0 +1,27 @@
+<svg width="220" height="80"
+     viewBox="0 0 220 80"
+     xmlns="http://www.w3.org/2000/svg">
+
+    <rect width="220"
+          height="80"
+          rx="12"
+          fill="#FFF8ED"/>
+
+    <text x="110"
+          y="43"
+          text-anchor="middle"
+          font-family="Arial"
+          font-size="28"
+          font-weight="bold"
+          fill="#232F3E">
+        aws
+    </text>
+
+    <path d="M75 53 Q110 70 145 53"
+          stroke="#FF9900"
+          stroke-width="5"
+          fill="none"
+          stroke-linecap="round"/>
+
+</svg>
+

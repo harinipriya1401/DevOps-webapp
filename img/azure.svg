@@ -1,0 +1,26 @@
+<svg width="220" height="80"
+     viewBox="0 0 220 80"
+     xmlns="http://www.w3.org/2000/svg">
+
+    <rect width="220"
+          height="80"
+          rx="12"
+          fill="#EFF8FF"/>
+
+    <polygon points="80,18 110,18 140,62 112,62"
+             fill="#0078D4"/>
+
+    <polygon points="110,35 143,62 95,62"
+             fill="#50E6FF"/>
+
+    <text x="155"
+          y="47"
+          font-family="Arial"
+          font-size="22"
+          font-weight="bold"
+          fill="#0078D4">
+        Azure
+    </text>
+
+</svg>
+
